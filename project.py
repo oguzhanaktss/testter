@@ -28,8 +28,4 @@
             })
         });
 
-        document.body.innerHTML += "<p>Cross-origin POST request sent.</p>";
-    </script>
-</body>
-
-</html>
+        document.body.innerHTML += "<p>Cross-origin POST request sent.</p>
