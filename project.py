@@ -3,17 +3,17 @@ import numpy as np
 import random
 import math
 
-costs = 0
+total = 0
 
-def costs_calculate(self):
+def costs_calculate():
 
  for a in range(4):
     
-    names = input("product name:")
-    costs = float(input("product cost:"))
+    name = input("product name:")
+    cost = float(input("product cost:"))
 
- print(names, "added")
- total += costs
+ print(name, "added")
+ total += cost
 
  if (total < 1000 and total > 600):
     new_total = total * 0.8
@@ -24,5 +24,4 @@ def costs_calculate(self):
 
  print("Total costs: ", new_total)
 
-def __init__():
-   costs_calculate()
+costs_calculate()
